@@ -1,0 +1,298 @@
+{
+  "chapter": 1,
+  "chapterName": "La Niebla",
+  "worldTheme": "fog",
+  "levels": [
+    {
+      "id": "ch1_l01",
+      "chapter": 1,
+      "levelNumber": 1,
+      "code": "1",
+      "name": "Donde Estoy",
+      "story": "La chispa despierta dentro de la niebla. No hay horizonte.",
+      "mechanic": "fog_walk",
+      "memoryId": "memory_ch1_footprint",
+      "phrase": "Un paso sigue siendo un paso.",
+      "targetDurationSeconds": 300,
+      "config": {
+        "fogDensity": 0.88,
+        "lightRadius": 85,
+        "landscapeVariant": "default",
+        "spawnPosition": { "x": 0.1, "y": 0.8 },
+        "goalPosition": { "x": 0.88, "y": 0.74 }
+      }
+    },
+    {
+      "id": "ch1_l02",
+      "chapter": 1,
+      "levelNumber": 2,
+      "code": "2",
+      "name": "Sin Mapa",
+      "story": "Encuentra una brújula rota. Apunta a todos lados.",
+      "mechanic": "invisible_path",
+      "memoryId": "memory_ch1_compass",
+      "phrase": "No necesitas tenerlo todo claro.",
+      "targetDurationSeconds": 360,
+      "config": {
+        "fogDensity": 0.82,
+        "lightRadius": 95,
+        "pathRevealRadius": 110,
+        "landscapeVariant": "broken_compass",
+        "spawnPosition": { "x": 0.08, "y": 0.82 },
+        "goalPosition": { "x": 0.9, "y": 0.76 }
+      }
+    },
+    {
+      "id": "ch1_l03",
+      "chapter": 1,
+      "levelNumber": 3,
+      "code": "3",
+      "name": "Tres Caminos",
+      "story": "Tres senderos se abren. Ninguno parece correcto.",
+      "mechanic": "three_paths",
+      "memoryId": "memory_ch1_fork",
+      "phrase": "No hay un solo camino correcto.",
+      "targetDurationSeconds": 360,
+      "config": {
+        "fogDensity": 0.8,
+        "lightRadius": 100,
+        "landscapeVariant": "three_paths",
+        "spawnPosition": { "x": 0.12, "y": 0.8 },
+        "goalPosition": { "x": 0.85, "y": 0.72 }
+      }
+    },
+    {
+      "id": "ch1_l04",
+      "chapter": 1,
+      "levelNumber": 4,
+      "code": "4",
+      "name": "La Nota",
+      "story": "Una nota a medio escribir: Si lees esto, yo también...",
+      "mechanic": "fog_walk",
+      "memoryId": "memory_ch1_note",
+      "phrase": "Otros han pasado por aquí.",
+      "targetDurationSeconds": 360,
+      "config": {
+        "fogDensity": 0.84,
+        "lightRadius": 92,
+        "landscapeVariant": "note_tree",
+        "spawnPosition": { "x": 0.15, "y": 0.78 },
+        "goalPosition": { "x": 0.82, "y": 0.7 }
+      }
+    },
+    {
+      "id": "ch1_l05",
+      "chapter": 1,
+      "levelNumber": 5,
+      "code": "5",
+      "name": "El Eco",
+      "story": "Voces lejanas repiten lo que la chispa no dijo.",
+      "mechanic": "fog_walk",
+      "memoryId": "memory_ch1_bell",
+      "phrase": "No estás inventando esto.",
+      "targetDurationSeconds": 360,
+      "config": {
+        "fogDensity": 0.86,
+        "lightRadius": 88,
+        "landscapeVariant": "stone_circle",
+        "spawnPosition": { "x": 0.1, "y": 0.8 },
+        "goalPosition": { "x": 0.88, "y": 0.73 }
+      }
+    },
+    {
+      "id": "ch1_l06",
+      "chapter": 1,
+      "levelNumber": 6,
+      "code": "6",
+      "name": "El Faro Apagado",
+      "story": "Una torre sin luz. Al acercarse, algo responde.",
+      "mechanic": "fog_walk",
+      "memoryId": "memory_ch1_wick",
+      "phrase": "A veces alguien dejó luz para ti.",
+      "targetDurationSeconds": 420,
+      "config": {
+        "fogDensity": 0.78,
+        "lightRadius": 105,
+        "landscapeVariant": "beacon_hill",
+        "spawnPosition": { "x": 0.08, "y": 0.82 },
+        "goalPosition": { "x": 0.82, "y": 0.68 }
+      }
+    },
+    {
+      "id": "ch1_l07",
+      "chapter": 1,
+      "levelNumber": 7,
+      "code": "7",
+      "name": "El Puente",
+      "story": "Un puente apenas visible sobre un vacío.",
+      "mechanic": "fog_walk",
+      "memoryId": "memory_ch1_plank",
+      "phrase": "Avanzar despacio también es avanzar.",
+      "targetDurationSeconds": 420,
+      "config": {
+        "fogDensity": 0.83,
+        "lightRadius": 90,
+        "landscapeVariant": "bridge_gap",
+        "spawnPosition": { "x": 0.12, "y": 0.8 },
+        "goalPosition": { "x": 0.88, "y": 0.76 }
+      }
+    },
+    {
+      "id": "ch1_l08",
+      "chapter": 1,
+      "levelNumber": 8,
+      "code": "8",
+      "name": "La Silla",
+      "story": "Una silla vacía en medio de la niebla. Alguien se sentó aquí.",
+      "mechanic": "fog_walk",
+      "memoryId": "memory_ch1_scarf",
+      "phrase": "Descansar no es rendirse.",
+      "targetDurationSeconds": 360,
+      "config": {
+        "fogDensity": 0.85,
+        "lightRadius": 95,
+        "landscapeVariant": "rest_chair",
+        "spawnPosition": { "x": 0.2, "y": 0.78 },
+        "goalPosition": { "x": 0.75, "y": 0.74 }
+      }
+    },
+    {
+      "id": "ch1_l09",
+      "chapter": 1,
+      "levelNumber": 9,
+      "code": "9",
+      "name": "El Reloj",
+      "story": "Un reloj detenido marca las tres.",
+      "mechanic": "invisible_path",
+      "memoryId": "memory_ch1_clock",
+      "phrase": "No todo tiene que tener prisa.",
+      "targetDurationSeconds": 420,
+      "config": {
+        "fogDensity": 0.8,
+        "lightRadius": 100,
+        "pathRevealRadius": 115,
+        "landscapeVariant": "clock_post",
+        "spawnPosition": { "x": 0.1, "y": 0.8 },
+        "goalPosition": { "x": 0.9, "y": 0.7 }
+      }
+    },
+    {
+      "id": "ch1_l10",
+      "chapter": 1,
+      "levelNumber": 10,
+      "code": "10",
+      "name": "La Mitad",
+      "story": "La chispa no sabe si va por la mitad o por el principio.",
+      "mechanic": "fog_walk",
+      "memoryId": "memory_ch1_half_photo",
+      "phrase": "No saber dónde estás no significa no estar avanzando.",
+      "targetDurationSeconds": 480,
+      "config": {
+        "fogDensity": 0.75,
+        "lightRadius": 110,
+        "landscapeVariant": "default",
+        "spawnPosition": { "x": 0.08, "y": 0.82 },
+        "goalPosition": { "x": 0.92, "y": 0.72 }
+      }
+    },
+    {
+      "id": "ch1_l11",
+      "chapter": 1,
+      "levelNumber": 11,
+      "code": "11",
+      "name": "Las Piedras",
+      "story": "Piedras apiladas dejan rastro de otros caminantes.",
+      "mechanic": "fog_walk",
+      "memoryId": "memory_ch1_stone",
+      "phrase": "Tu camino también cuenta.",
+      "targetDurationSeconds": 420,
+      "config": {
+        "fogDensity": 0.82,
+        "lightRadius": 95,
+        "landscapeVariant": "stone_cairn",
+        "spawnPosition": { "x": 0.1, "y": 0.8 },
+        "goalPosition": { "x": 0.88, "y": 0.73 }
+      }
+    },
+    {
+      "id": "ch1_l12",
+      "chapter": 1,
+      "levelNumber": 12,
+      "code": "12",
+      "name": "El Susurro",
+      "story": "La niebla susurra dudas que no son tuyas.",
+      "mechanic": "fog_walk",
+      "memoryId": "memory_ch1_feather",
+      "phrase": "No todo lo que piensas es verdad.",
+      "targetDurationSeconds": 420,
+      "config": {
+        "fogDensity": 0.9,
+        "lightRadius": 88,
+        "landscapeVariant": "whisper_mist",
+        "spawnPosition": { "x": 0.12, "y": 0.81 },
+        "goalPosition": { "x": 0.86, "y": 0.71 }
+      }
+    },
+    {
+      "id": "ch1_l13",
+      "chapter": 1,
+      "levelNumber": 13,
+      "code": "13",
+      "name": "El Espejo",
+      "story": "Un charco refleja un cielo despejado que no está arriba.",
+      "mechanic": "mirror_pond",
+      "memoryId": "memory_ch1_mirror",
+      "phrase": "A veces el cielo sigue ahí arriba.",
+      "targetDurationSeconds": 450,
+      "config": {
+        "fogDensity": 0.86,
+        "lightRadius": 90,
+        "landscapeVariant": "mirror_pond",
+        "pondPosition": { "x": 0.5, "y": 0.78 },
+        "pondClearRadius": 120,
+        "spawnPosition": { "x": 0.1, "y": 0.8 },
+        "goalPosition": { "x": 0.9, "y": 0.7 }
+      }
+    },
+    {
+      "id": "ch1_l14",
+      "chapter": 1,
+      "levelNumber": 14,
+      "code": "14",
+      "name": "La Linterna",
+      "story": "Una linterna apagada. Tu luz puede encenderla.",
+      "mechanic": "lantern_boost",
+      "memoryId": "memory_ch1_lantern",
+      "phrase": "Tu luz puede encender otras cosas.",
+      "targetDurationSeconds": 480,
+      "config": {
+        "fogDensity": 0.84,
+        "lightRadius": 80,
+        "lightRadiusBoost": 45,
+        "landscapeVariant": "lantern_post",
+        "pickupPosition": { "x": 0.42, "y": 0.76 },
+        "spawnPosition": { "x": 0.08, "y": 0.82 },
+        "goalPosition": { "x": 0.92, "y": 0.68 }
+      }
+    },
+    {
+      "id": "ch1_l15",
+      "chapter": 1,
+      "levelNumber": 15,
+      "code": "15",
+      "name": "El Nombre",
+      "story": "Una piedra tiene un nombre tallado. No es el tuyo. Pero duele igual.",
+      "mechanic": "fog_walk",
+      "memoryId": "memory_ch1_carved",
+      "phrase": "El dolor de otros no quita el tuyo.",
+      "targetDurationSeconds": 480,
+      "config": {
+        "fogDensity": 0.8,
+        "lightRadius": 100,
+        "landscapeVariant": "carved_stones",
+        "spawnPosition": { "x": 0.15, "y": 0.79 },
+        "goalPosition": { "x": 0.85, "y": 0.72 }
+      }
+    }
+  ]
+}

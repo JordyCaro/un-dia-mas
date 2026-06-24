@@ -1,0 +1,62 @@
+{
+  "chapter": 0,
+  "chapterName": "Prólogo — La Chispa",
+  "worldTheme": "prologue",
+  "levels": [
+    {
+      "id": "prologue_p1",
+      "chapter": 0,
+      "levelNumber": 1,
+      "code": "P1",
+      "name": "El Parpadeo",
+      "story": "La chispa aparece. El mundo no existe aún.",
+      "mechanic": "walk_to_light",
+      "memoryId": null,
+      "phrase": null,
+      "targetDurationSeconds": 180,
+      "config": {
+        "backgroundColor": "#050508",
+        "lightRadius": 120,
+        "goalPosition": { "x": 0.75, "y": 0.5 },
+        "spawnPosition": { "x": 0.25, "y": 0.5 },
+        "goalRadius": 40
+      }
+    },
+    {
+      "id": "prologue_p2",
+      "chapter": 0,
+      "levelNumber": 2,
+      "code": "P2",
+      "name": "El Aliento",
+      "story": "La oscuridad pulsa al ritmo de una respiración.",
+      "mechanic": "breathe",
+      "memoryId": "memory_prologue_star_dust",
+      "phrase": "Respira. Todavía estás aquí.",
+      "targetDurationSeconds": 240,
+      "config": {
+        "backgroundColor": "#050508",
+        "lightRadius": 140,
+        "breatheDurationSeconds": 8,
+        "pulseIntensity": 0.6
+      }
+    },
+    {
+      "id": "prologue_p3",
+      "chapter": 0,
+      "levelNumber": 3,
+      "code": "P3",
+      "name": "El Primer Paso",
+      "story": "Un sendero se dibuja solo donde la chispa camina.",
+      "mechanic": "trail_walk",
+      "memoryId": "memory_prologue_light_seed",
+      "phrase": "No necesitas llegar al final. Solo llega a mañana.",
+      "targetDurationSeconds": 300,
+      "config": {
+        "backgroundColor": "#08080f",
+        "lightRadius": 130,
+        "trailEnabled": true,
+        "goalPosition": { "x": 0.85, "y": 0.45 }
+      }
+    }
+  ]
+}
