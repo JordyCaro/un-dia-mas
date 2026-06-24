@@ -2,6 +2,8 @@
 
 Juego contemplativo aliado al ecosistema **Enjoy** (salud mental y bienestar emocional).
 
+**Repositorio:** https://github.com/JordyCaro/un-dia-mas
+
 | Carpeta | Contenido |
 |---------|-----------|
 | [`un_dia_mas/`](un_dia_mas/) | App Flutter + Flame (jugable en web) |
