@@ -4,76 +4,26 @@ Juego contemplativo en Flutter + Flame. Camina como **La Luz** (La Chispa) y lle
 
 Aliado del ecosistema Enjoy. Idioma: **español**. Recursos de crisis: **Colombia** (v1).
 
-## Requisitos
+## Documentación del proyecto
 
-- Flutter SDK 3.16+ ([instalado en `C:\Repos\flutter`](C:\Repos\flutter) o en PATH)
-- Chrome (para probar en web)
-- Android Studio / Xcode (opcional, para móvil)
+La documentación completa está en la **raíz del repositorio**:
 
-### Añadir Flutter al PATH (Windows)
-
-```powershell
-# Sesión actual
-$env:Path = "C:\Repos\flutter\bin;" + $env:Path
-
-# Permanente (PowerShell como admin, una vez)
-[Environment]::SetEnvironmentVariable("Path", "C:\Repos\flutter\bin;" + [Environment]::GetEnvironmentVariable("Path", "User"), "User")
-```
+| Guía | Enlace |
+|------|--------|
+| Compilar y probar (esta app) | [`../docs/COMPILAR_Y_PROBAR.md`](../docs/COMPILAR_Y_PROBAR.md) |
+| Continuar desarrollo | [`../docs/CONTINUAR_DESARROLLO.md`](../docs/CONTINUAR_DESARROLLO.md) |
+| Arquitectura | [`../docs/ARQUITECTURA.md`](../docs/ARQUITECTURA.md) |
+| Añadir nivel | [`../docs/AGREGAR_NIVEL.md`](../docs/AGREGAR_NIVEL.md) |
+| Índice | [`../docs/README.md`](../docs/README.md) |
 
 ## Inicio rápido
 
-```powershell
-cd "c:\Repos\enjoy game\un_dia_mas"
+```bash
 flutter pub get
-```
-
-## Probar en la web
-
-### Opción 1 — Modo desarrollo (recomendado)
-
-Abre Chrome con hot reload:
-
-```powershell
-cd "c:\Repos\enjoy game\un_dia_mas"
 flutter run -d chrome
 ```
 
-- **Ratón:** arrastra para mover la chispa
-- **P2 El Aliento:** mantén clic presionado para respirar
-- La app se recarga al guardar cambios en el código
-
-### Opción 2 — Build de producción local
-
-Ya compilado en `build/web/`. Servir con cualquier servidor estático:
-
-```powershell
-cd "c:\Repos\enjoy game\un_dia_mas"
-flutter build web --release
-cd build\web
-python -m http.server 8080
-```
-
-Abre en el navegador: **http://localhost:8080**
-
-### Opción 3 — Edge
-
-```powershell
-flutter run -d edge
-```
-
-## Probar en Windows (escritorio)
-
-```powershell
-flutter run -d windows
-```
-
-## Probar en Android
-
-Con emulador o dispositivo conectado:
-
-```powershell
-flutter run -d android
-```
+Ver [**Compilar y probar**](../docs/COMPILAR_Y_PROBAR.md) para requisitos, otras plataformas y solución de problemas.
 
 ## MVP actual — ~10 % del juego (18 / 183 niveles)
 
@@ -84,26 +34,23 @@ flutter run -d android
 
 Mecánicas: `walk_to_light`, `breathe`, `trail_walk`, `fog_walk`, `invisible_path`, `three_paths`, `mirror_pond`, `lantern_boost`.
 
-Progresión automática con botón **Siguiente paso** al completar cada nivel.
-
-## Estructura
+## Estructura de `lib/`
 
 ```
 lib/
   core/theme/       # Colores, WorldTheme por capítulo
   game/
     components/     # Chispa, fondo, motas, sendero, niebla
-    levels/         # P1, P2, P3, Niebla
+    levels/         # P1, P2, P3, FogWalkLevel
   features/         # Inicio, juego, ajustes, crisis Colombia
   models/           # LevelDefinition
   services/         # Niveles JSON, guardado local
 assets/data/levels/ # prólogo.json, chapter_01.json
-build/web/          # Build web listo para desplegar
 ```
 
 ## La Chispa (código, sin sprites)
 
-Dibujada en `ChispaComponent`: núcleo cálido, corona, halo pulsante, chispas orbitales y estela al moverse.
+Dibujada en `ChispaComponent`: núcleo cálido, corona, halo pulsante, tentáculos y estela al moverse.
 
 ## Disclaimer
 

@@ -4,25 +4,35 @@ Juego contemplativo aliado al ecosistema **Enjoy** (salud mental y bienestar emo
 
 **Repositorio:** https://github.com/JordyCaro/un-dia-mas
 
-| Carpeta | Contenido |
-|---------|-----------|
+| Carpeta / archivo | Contenido |
+|-------------------|-----------|
 | [`un_dia_mas/`](un_dia_mas/) | App Flutter + Flame (jugable en web) |
+| [`docs/`](docs/) | **Documentación para devs y agentes** (compilar, arquitectura, añadir niveles) |
+| [`AGENTS.md`](AGENTS.md) | Instrucciones breves para agentes de IA (Cursor, etc.) |
 | [`Enjoy_Journey_Master_Design_Document_v1.md`](Enjoy_Journey_Master_Design_Document_v1.md) | Documento de diseño maestro (GDD) |
 
 ## Estado actual
 
 **~10 % del juego** — 18 de 183 niveles planificados (prólogo + capítulo 1 hasta «El Nombre»).
 
+## Documentación
+
+| Guía | Descripción |
+|------|-------------|
+| [**Compilar y probar**](docs/COMPILAR_Y_PROBAR.md) | Todo lo necesario para ejecutar la app en otro equipo |
+| [**Continuar desarrollo**](docs/CONTINUAR_DESARROLLO.md) | Convenciones y alineación para seguir el proyecto |
+| [**Arquitectura**](docs/ARQUITECTURA.md) | Estructura técnica del código |
+| [**Añadir nivel**](docs/AGREGAR_NIVEL.md) | Paso a paso para nuevo contenido |
+
 ## Inicio rápido
 
 ```powershell
 cd un_dia_mas
-$env:Path = "C:\Repos\flutter\bin;" + $env:Path
 flutter pub get
 flutter run -d chrome
 ```
 
-Ver [`un_dia_mas/README.md`](un_dia_mas/README.md) para más opciones de build y prueba.
+Requisitos detallados, troubleshooting y otras plataformas: [**docs/COMPILAR_Y_PROBAR.md**](docs/COMPILAR_Y_PROBAR.md).
 
 ## Disclaimer
 
